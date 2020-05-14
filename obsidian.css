@@ -88,12 +88,12 @@ mark
     background-color: var(--text-mark) !important;
 }
 
-.file-view-actions a
+.view-actions a
 {
     color: var(--text-normal) !important;
 }
 
-.file-view-actions a:hover
+.view-actions a:hover
 {
     color: var(--text-a) !important;
 }
