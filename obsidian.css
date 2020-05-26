@@ -32,7 +32,7 @@
     --background-secondary-alt:   var(--dark2);
     --text-normal:                var(--light2);
     --text-faint:                 var(--light0);
-    --text-muted:                 var(--light0);
+    --text-muted:                 var(--light1);
     --text-title-h1:              var(--red);
     --text-title-h2:              var(--orange);
     --text-title-h3:              var(--yellow);
@@ -186,11 +186,15 @@ img
     margin-right: auto !important;
 }
 
-pre
+.HyperMD-list-line
 {
-    padding: 0 !important;
-    margin: 0 !important;
-    border: 0 !important;
+    padding-top: 0 !important;
+}
+
+.cm-formatting
+{
+    font-family: var(--font-monospace) !important;
+    color: var(--frost2) !important;
 }
 
 .markdown-preview-section pre code,
