@@ -207,6 +207,7 @@ img
     padding-top: 0 !important;
 }
 
+.CodeMirror-linenumber,
 .cm-formatting
 {
     font-family: var(--font-monospace) !important;
