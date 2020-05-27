@@ -64,10 +64,26 @@
     background-color: var(--pre-code) !important;
 }
 
-#graph-view-canvas .links
+.graph-view.color-circle,
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight
 {
-    stroke: var(--interactive-accent-rgb) !important;
+    color: var(--interactive-accent-rgb) !important;
 }
+.graph-view.color-text
+{
+    color: var(--text-a-hover) !important;
+}
+/*
+.graph-view.color-fill
+{
+    color: var(--background-secondary);
+}
+.graph-view.color-line
+{
+  color: var(--background-modifier-border);
+}
+*/
 
 html,
 body
