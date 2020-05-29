@@ -129,8 +129,6 @@ mark
 .HyperMD-codeblock
 {
     line-height: 1.4em !important;
-    padding-left: 4px !important;
-    padding-right: 4px !important;
     background-color: var(--pre-code) !important;
     color: var(--code-block) !important;
 }
