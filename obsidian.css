@@ -114,6 +114,7 @@ a:hover,
 mark
 {
     background-color: var(--text-mark) !important;
+    color: var(--dark2) !important;
 }
 
 .view-actions a
