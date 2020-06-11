@@ -52,7 +52,7 @@
     --inline-code:                var(--frost1);
     --code-block:                 var(--frost1);
     --vim-cursor:                 var(--orange);
-
+    --text-selection:             var(--dark3);
 }
 
 .theme-dark code[class*="language-"],
@@ -377,11 +377,6 @@ img
 {
     background-color: var(--interactive-before) !important;
     font-weight: 600 !important;
-}
-
-.CodeMirror pre.CodeMirror-line
-{
-    z-index: auto !important;
 }
 
 .CodeMirror-cursor
