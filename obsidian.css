@@ -41,7 +41,7 @@
     --text-link:                  var(--frost0);
     --text-a:                     var(--frost3);
     --text-a-hover:               var(--frost2);
-    --text-mark:                  var(--yellow);
+    --text-mark:                  rgba(136, 192, 208, 0.3); /* frost1 */
     --pre-code:                   var(--dark1);
     --text-highlight-bg:          var(--dark3);
     --interactive-accent:         var(--frost0);
@@ -114,7 +114,6 @@ a:hover,
 mark
 {
     background-color: var(--text-mark) !important;
-    color: var(--dark2) !important;
 }
 
 .view-actions a
