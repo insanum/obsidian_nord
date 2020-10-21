@@ -9,6 +9,7 @@
     --light0: #d8dee9;
     --light1: #e5e9f0;
     --light2: #eceff4;
+    --light3: #ffffff;
 
     --frost0: #8fbcbb;
     --frost1: #88c0d0;
@@ -20,12 +21,12 @@
     --yellow: #ebcb8b;
     --green:  #a3be8c;
     --purple: #b48ead;
+
+    --font-monospace: 'Hack Nerd Font', 'Source Code Pro', monospace; 
 }
 
-.theme-dark,
-.theme-light
+.theme-dark
 {
-    --font-monospace: 'Hack Nerd Font', 'Source Code Pro', monospace; 
     --background-primary:         var(--dark0);
     --background-primary-alt:     var(--dark0);
     --background-secondary:       var(--dark1);
@@ -53,6 +54,36 @@
     --code-block:                 var(--frost1);
     --vim-cursor:                 var(--orange);
     --text-selection:             var(--dark3);
+}
+.theme-light
+{
+	--background-primary:         var(--light3);
+	--background-primary-alt:     var(--light3);
+	--background-secondary:       var(--light2);
+	--background-secondary-alt:   var(--light1);
+	--text-normal:                var(--dark1);
+	--text-faint:                 var(--dark3);
+	--text-muted:                 var(--dark2);
+	--text-title-h1:              var(--red);
+	--text-title-h2:              var(--orange);
+	--text-title-h3:              var(--yellow);
+	--text-title-h4:              var(--green);
+	--text-title-h5:              var(--purple);
+	--text-link:                  var(--frost0);
+	--text-a:                     var(--frost3);
+	--text-a-hover:               var(--frost1);
+	--text-mark:                  rgba(136, 192, 208, 0.3); /* frost1 */
+	--pre-code:                   var(--light2);
+	--text-highlight-bg:          var(--light0);
+	--interactive-accent:         var(--frost0);
+	--interactive-before:         var(--light0);
+	--background-modifier-border: var(--light1);
+	--text-accent:                var(--orange);
+	--interactive-accent-rgb:     var(--orange);
+	--inline-code:                var(--frost1);
+	--code-block:                 var(--frost1);
+	--vim-cursor:                 var(--orange);
+	--text-selection:             var(--light0);
 }
 
 .theme-dark code[class*="language-"],
