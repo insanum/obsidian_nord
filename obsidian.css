@@ -195,7 +195,7 @@ thead
     line-height: normal !important;
     padding-left: 4px !important;
     padding-right: 4px !important;
-    background-color: var(--pre-code) !important;
+    /* background-color: var(--pre-code) !important; */
 }
 
 .HyperMD-table-row-0
