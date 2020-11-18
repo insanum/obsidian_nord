@@ -22,7 +22,7 @@
     --green:  #a3be8c;
     --purple: #b48ead;
 
-    --font-monospace: 'Hack Nerd Font', 'Source Code Pro', monospace; 
+    --font-monospace: 'Hack Nerd Font', 'Source Code Pro', monospace;
 }
 
 .theme-dark
@@ -320,7 +320,7 @@ img
 
 /* vertical resize-handle */
 .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
-.workspace-split.mod-left-split > .workspace-leaf-resize-handle, 
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle
 {
     width: 1px !important;
@@ -446,5 +446,10 @@ input.task-list-item-checkbox {
 input.task-list-item-checkbox:checked {
     background-color: var(--frost2);
     box-shadow: inset 0 0 0 2px var(--background-primary);
+}
+
+.mermaid .note
+{
+    fill: var(--frost3) !important;
 }
 
