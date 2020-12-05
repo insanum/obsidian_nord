@@ -273,7 +273,10 @@ img
     color: var(--inline-code) !important;
 }
 
-.cm-s-obsidian,
+.cm-s-obsidian
+{
+    font-family: var(--font-monospace) !important;
+}
 .cm-inline-code
 {
     -webkit-font-smoothing: auto !important;
@@ -311,7 +314,6 @@ img
     border-right: 0 !important;
 }
 
-.cm-s-obsidian,
 .markdown-preview-view
 {
     /* padding-left: 10px !important; */
