@@ -54,6 +54,8 @@
     --code-block:                 var(--frost1);
     --vim-cursor:                 var(--orange);
     --text-selection:             var(--dark3);
+    --text-tag:                   var(--frost0);
+    --task-checkbox:              var(--frost0);
 }
 .theme-light
 {
@@ -84,6 +86,8 @@
 	--code-block:                 var(--frost1);
 	--vim-cursor:                 var(--orange);
 	--text-selection:             var(--light0);
+    --text-tag:                   var(--frost2);
+    --task-checkbox:              var(--frost0);
 }
 
 .theme-dark code[class*="language-"],
@@ -140,6 +144,13 @@ a:hover,
 {
     color: var(--text-a-hover) !important;
     text-decoration: none !important;
+}
+
+a.tag, a.tag:hover {
+  color: var(--text-tag) !important;
+  background-color: var(--background-secondary-alt);
+  padding: 2px 4px;
+  border-radius: 4px;
 }
 
 mark
@@ -431,13 +442,13 @@ thead
 }
 
 input.task-list-item-checkbox {
-    border: 1px solid var(--frost3);
+    border: 1px solid var(--task-checkbox);
     appearance: none;
     -webkit-appearance: none;
 }
 
 input.task-list-item-checkbox:checked {
-    background-color: var(--frost2);
+    background-color: var(--task-checkbox);
     box-shadow: inset 0 0 0 2px var(--background-primary);
 }
 
