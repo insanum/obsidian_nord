@@ -21,8 +21,6 @@
     --yellow: #ebcb8b;
     --green:  #a3be8c;
     --purple: #b48ead;
-
-    --font-monospace: 'Hack Nerd Font', 'Source Code Pro', monospace;
 }
 
 .theme-dark
@@ -90,6 +88,25 @@
 	--text-selection:             var(--light0);
     --text-tag:                   var(--frost2);
     --task-checkbox:              var(--frost0);
+}
+
+:root {
+  --default-font: -apple-system, BlinkMacSystemFont, Segoe UI,
+    Helvetica, Arial, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji;
+
+  --editor-font: 'Hack Nerd Font', 'Source Code Pro',
+    ui-monospace, SFMono-Regular, SF Mono, Menlo,
+    Consolas, Liberation Mono, monospace;
+}
+
+.markdown-source-view {
+  font-family: var(--editor-font);
+  font-size: 0.9em;
+}
+
+.markdown-preview-view {
+  font-family: var(--default-font);
 }
 
 .theme-dark code[class*="language-"],
@@ -252,14 +269,6 @@ thead
 .HyperMD-list-line
 {
     padding-top: 0 !important;
-}
-
-.CodeMirror-code,
-.CodeMirror-linenumber,
-.cm-formatting
-{
-    font-family: var(--font-monospace) !important;
-    color: var(--frost2) !important;
 }
 
 .cm-hashtag,
