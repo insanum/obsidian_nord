@@ -254,6 +254,7 @@ thead
     padding-top: 0 !important;
 }
 
+.CodeMirror-code,
 .CodeMirror-linenumber,
 .cm-formatting
 {
