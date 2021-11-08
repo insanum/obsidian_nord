@@ -44,7 +44,8 @@
     --text-a-hover:               var(--frost2);
     --text-mark:                  rgba(136, 192, 208, 0.3); /* frost1 */
     --pre-code:                   var(--dark1);
-    --text-highlight-bg:          var(--dark3);
+    --text-highlight-bg:          var(--red);
+    --text-highlight-bg-active:   var(--green);
     --interactive-accent:         var(--frost0);
     --interactive-before:         var(--dark3);
     --background-modifier-border: var(--dark2);
@@ -76,7 +77,8 @@
 	--text-a-hover:               var(--frost1);
 	--text-mark:                  rgba(136, 192, 208, 0.3); /* frost1 */
 	--pre-code:                   var(--light2);
-	--text-highlight-bg:          var(--light0);
+	--text-highlight-bg:          var(--green);
+    --text-highlight-bg-active:   var(--yellow);
 	--interactive-accent:         var(--frost0);
 	--interactive-before:         var(--light0);
 	--background-modifier-border: var(--light1);
@@ -262,7 +264,7 @@ thead
 .cm-hashtag,
 .search-result-file-matched-text
 {
-    color: var(--frost2) !important;
+    color: var(--light3) !important;
 }
 
 .markdown-preview-section pre code,
