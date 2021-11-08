@@ -418,10 +418,9 @@ thead
     background-color: var(--background-secondary);
 }
 
-.empty-state-container:hover
+.empty-state-action:hover
 {
-    background-color: var(--background-secondary-alt);
-    border: 5px solid var(--interactive-accent) !important;
+    color: var(--interactive-accent);
 }
 
 .checkbox-container
