@@ -272,7 +272,11 @@ thead
     padding-top: 0 !important;
 }
 
-.cm-hashtag,
+.cm-hashtag
+{
+    color: var(--text-tag) !important;
+}
+
 .search-result-file-matched-text
 {
     color: var(--light3) !important;
