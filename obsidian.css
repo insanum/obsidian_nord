@@ -175,7 +175,7 @@ a.tag, a.tag:hover {
 
 mark
 {
-    background-color: var(--text-mark) !important;
+    background-color: var(--text-mark);
 }
 
 .titlebar {
