@@ -43,7 +43,7 @@
     --text-a-hover:               var(--frost2);
     --text-mark:                  rgba(136, 192, 208, 0.3); /* frost1 */
     --pre-code:                   var(--dark1);
-    --text-highlight-bg:          var(--red);
+    --text-highlight-bg:          rgba(163, 190, 140, 0.3); /* green */
     --text-highlight-bg-active:   var(--green);
     --interactive-accent:         var(--frost0);
     --interactive-before:         var(--dark3);
@@ -77,8 +77,8 @@
 	--text-a-hover:               var(--frost1);
 	--text-mark:                  rgba(136, 192, 208, 0.3); /* frost1 */
 	--pre-code:                   var(--light2);
-	--text-highlight-bg:          var(--green);
-    --text-highlight-bg-active:   var(--yellow);
+  --text-highlight-bg:          rgba(235, 203, 139, 0.6); /* yellow */
+  --text-highlight-bg-active:   var(--yellow);
 	--interactive-accent:         var(--frost0);
 	--interactive-before:         var(--light0);
 	--background-modifier-border: var(--light1);
