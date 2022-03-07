@@ -59,35 +59,35 @@
 }
 .theme-light
 {
-	--background-primary:         var(--light3);
-	--background-primary-alt:     var(--light3);
-	--background-secondary:       var(--light2);
-	--background-secondary-alt:   var(--light1);
-	--text-normal:                var(--dark1);
-	--text-faint:                 var(--dark3);
-	--text-muted:                 var(--dark2);
-	--text-title-h1:              var(--red);
-	--text-title-h2:              var(--orange);
-	--text-title-h3:              var(--yellow);
-	--text-title-h4:              var(--green);
-	--text-title-h5:              var(--purple);
-	--text-title-h6:              var(--orange);
-	--text-link:                  var(--frost0);
-	--text-a:                     var(--frost3);
-	--text-a-hover:               var(--frost1);
-	--text-mark:                  rgba(136, 192, 208, 0.3); /* frost1 */
-	--pre-code:                   var(--light2);
-  --text-highlight-bg:          rgba(235, 203, 139, 0.6); /* yellow */
-  --text-highlight-bg-active:   var(--yellow);
-	--interactive-accent:         var(--frost0);
-	--interactive-before:         var(--light0);
-	--background-modifier-border: var(--light1);
-	--text-accent:                var(--orange);
-	--interactive-accent-rgb:     var(--orange);
-	--inline-code:                var(--frost1);
-	--code-block:                 var(--frost1);
-	--vim-cursor:                 var(--orange);
-	--text-selection:             var(--light0);
+    --background-primary:         var(--light3);
+    --background-primary-alt:     var(--light3);
+    --background-secondary:       var(--light2);
+    --background-secondary-alt:   var(--light1);
+    --text-normal:                var(--dark1);
+    --text-faint:                 var(--dark3);
+    --text-muted:                 var(--dark2);
+    --text-title-h1:              var(--red);
+    --text-title-h2:              var(--orange);
+    --text-title-h3:              var(--yellow);
+    --text-title-h4:              var(--green);
+    --text-title-h5:              var(--purple);
+    --text-title-h6:              var(--orange);
+    --text-link:                  var(--frost0);
+    --text-a:                     var(--frost3);
+    --text-a-hover:               var(--frost1);
+    --text-mark:                  rgba(136, 192, 208, 0.3); /* frost1 */
+    --pre-code:                   var(--light2);
+    --text-highlight-bg:          rgba(235, 203, 139, 0.6); /* yellow */
+    --text-highlight-bg-active:   var(--yellow);
+    --interactive-accent:         var(--frost0);
+    --interactive-before:         var(--light0);
+    --background-modifier-border: var(--light1);
+    --text-accent:                var(--orange);
+    --interactive-accent-rgb:     var(--orange);
+    --inline-code:                var(--frost1);
+    --code-block:                 var(--frost1);
+    --vim-cursor:                 var(--orange);
+    --text-selection:             var(--light0);
     --text-tag:                   var(--frost2);
     --task-checkbox:              var(--frost0);
 }
@@ -385,7 +385,44 @@ thead
     margin-right: 10px !important;
 }
 
-.cm-header-1,
+.cm-header-1.cm-link,
+h1 a
+{
+    color: var(--text-title-h1) !important;
+}
+
+.cm-header-2.cm-link,
+h2 a
+{
+    color: var(--text-title-h2) !important;
+}
+
+.cm-header-3.cm-link,
+h3 a
+{
+    color: var(--text-title-h3) !important;
+}
+.cm-header-4.cm-link,
+h4 a
+{
+    color: var(--text-title-h4) !important;
+}
+.cm-header-5.cm-link,
+h5 a
+{
+    color: var(--text-title-h5) !important;
+}
+.cm-header-6.cm-link,
+h6 a
+{
+    color: var(--text-title-h6) !important;
+}
+
+.cm-header {
+    font-weight: 500 !important;
+}
+
+.HyperMD-header-1,
 .markdown-preview-section h1
 {
     font-weight: 500 !important;
@@ -393,7 +430,7 @@ thead
     color: var(--text-title-h1) !important;
 }
 
-.cm-header-2,
+.HyperMD-header-2,
 .markdown-preview-section h2
 {
     font-weight: 500 !important;
@@ -401,7 +438,7 @@ thead
     color: var(--text-title-h2) !important;
 }
 
-.cm-header-3,
+.HyperMD-header-3,
 .markdown-preview-section h3
 {
     font-weight: 500 !important;
@@ -409,7 +446,7 @@ thead
     color: var(--text-title-h3) !important;
 }
 
-.cm-header-4,
+.HyperMD-header-4,
 .markdown-preview-section h4
 {
     font-weight: 500 !important;
@@ -417,7 +454,7 @@ thead
     color: var(--text-title-h4) !important;
 }
 
-.cm-header-5,
+.HyperMD-header-5,
 .markdown-preview-section h5
 {
     font-weight: 500 !important;
@@ -425,7 +462,7 @@ thead
     color: var(--text-title-h5) !important;
 }
 
-.cm-header-6,
+.HyperMD-header-6,
 .markdown-preview-section h6
 {
     font-weight: 500 !important;
