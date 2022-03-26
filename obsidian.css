@@ -219,11 +219,30 @@ mark
     border-bottom-right-radius: 4px !important;
 }
 
-th
-{
+
+table {
+    border: 1px solid var(--background-secondary) !important;
+    border-collapse: collapse;
+}
+  
+th {
     font-weight: 600 !important;
+    border: 0px !important;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.12);
+    color: var(--inline-code);
 }
 
+td {
+    border-left: 0px !important;
+    border-right: 0px !important;
+    border-bottom: 1px solid var(--background-secondary) !important;
+}
+
+tr:nth-child(even){ background-color: #3b4252b0; }
+tr:nth-child(odd){ background-color: rgba(0, 0, 0, 0.03) }
+tr:hover { background-color: var(--background-secondary-alt); }
+  
 thead
 {
     border-bottom: 2px solid var(--background-modifier-border) !important;
