@@ -56,6 +56,10 @@
     --text-selection:             var(--dark3);
     --text-tag:                   var(--frost0);
     --task-checkbox:              var(--frost0);
+    --table-header:               hsl(220, 16%, 16%);
+    --table-row-even:             hsl(220, 16%, 20%);
+    --table-row-odd:              hsl(220, 16%, 24%);
+    --table-hover:                var(--dark3);
 }
 .theme-light
 {
@@ -90,6 +94,10 @@
     --text-selection:             var(--light0);
     --text-tag:                   var(--frost2);
     --task-checkbox:              var(--frost0);
+    --table-header:               hsl(218, 27%, 48%);
+    --table-row-even:             hsl(220, 16%, 94%);
+    --table-row-odd:              hsl(220, 16%, 98%);
+    --table-hover:                var(--light1);
 }
 
 :root {
@@ -229,8 +237,8 @@ th {
     font-weight: 600 !important;
     border: 0px !important;
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.12);
-    color: var(--inline-code);
+    background-color: var(--table-header);
+    color: var(--frost0);
 }
 
 td {
@@ -239,9 +247,9 @@ td {
     border-bottom: 1px solid var(--background-secondary) !important;
 }
 
-tr:nth-child(even){ background-color: #3b4252b0; }
-tr:nth-child(odd){ background-color: rgba(0, 0, 0, 0.03) }
-tr:hover { background-color: var(--background-secondary-alt); }
+tr:nth-child(even){ background-color: var(--table-row-even) }
+tr:nth-child(odd){ background-color: var(--table-row-odd) }
+tr:hover { background-color: var(--table-hover); }
   
 thead
 {
