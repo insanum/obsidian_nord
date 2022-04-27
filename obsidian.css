@@ -367,13 +367,6 @@ thead
     border-right: 0 !important;
 }
 
-.cm-s-obsidian,
-.markdown-preview-view
-{
-    /* padding-left: 10px !important; */
-    padding-right: 10px !important;
-}
-
 /* vertical resize-handle */
 .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle,
