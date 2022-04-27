@@ -169,6 +169,10 @@ a.tag, a.tag:hover {
   border-radius: 4px;
 }
 
+a.tag:hover {
+    text-decoration: underline !important;
+}
+
 mark
 {
     background-color: var(--text-mark);
@@ -287,9 +291,29 @@ thead
     padding-top: 0 !important;
 }
 
-.cm-hashtag
+.cm-hashtag-begin
 {
     color: var(--text-tag) !important;
+    background-color: var(--background-secondary-alt);
+    padding: 2px 0 2px 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    text-decoration: none !important;
+}
+
+.cm-hashtag-end
+{
+    color: var(--text-tag) !important;
+    background-color: var(--background-secondary-alt);
+    padding: 2px 4px 2px 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    text-decoration: none !important;
+}
+
+.cm-hashtag-begin:hover, .cm-hashtag-end:hover
+{
+    text-decoration: underline !important;
 }
 
 .search-result-file-matched-text
