@@ -556,6 +556,14 @@ input.task-list-item-checkbox:checked {
     fill: var(--frost3) !important;
 }
 
+.node circle,
+.node ellipse,
+.node path,
+.node polygon,
+.node rect {
+  stroke: var(--frost2) !important;
+}
+
 .setting-item-control input[type="text"] {
     color: var(--text-normal);
 }
