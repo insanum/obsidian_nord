@@ -1,11 +1,10 @@
 
-# Obsidian + nord
+# Obsidian + Nord
 
-This is a [nord](https://github.com/arcticicestudio/nord) theme for
+This is a [Nord](https://github.com/arcticicestudio/nord) theme for
 [Obsidian](https://obsidian.md).
 
-Simply copy the `obsidian.css` file to your vault directory and reload
-Obsidian for it to take effect.
+![](dark.png)
 
-![](screen.png)
+![](light.png)
 
