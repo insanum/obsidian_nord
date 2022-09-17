@@ -358,6 +358,24 @@ pre[class*="language-"]
     padding: 0.1em 0.25em;
 }
 
+.cm-formatting-code + .cm-inline-code
+{
+    border-radius: 0;
+    padding: 0.1em 0;
+}
+
+.cm-formatting-code
+{
+    border-radius: var(--radius-s) 0 0 var(--radius-s);
+    padding: 0.1em 0 0.1em 0.25em;
+}
+
+.cm-inline-code + .cm-formatting-code
+{
+    border-radius: 0 var(--radius-s) var(--radius-s) 0;
+    padding: 0.1em 0.25em 0.1em 0;
+}
+
 /* Keep list bullet padding the same between viewer and editor. */
 .cm-formatting-list
 {
