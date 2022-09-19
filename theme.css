@@ -62,7 +62,7 @@ body
 
     --checkbox-radius:                0;
 
-    --list-indent:                    2em;
+    /* --list-indent:                    2em; */
 
     --embed-border-left: 6px double var(--interactive-accent);
 }
@@ -386,10 +386,12 @@ pre[class*="language-"]
  * Keep sub-list indenting the same between viewer and editor.
  * This assumes --list-indent is default at 2em.
  */
+/*
 .cm-indent 
 {
     text-indent: 1em !important;
 }
+*/
 
 .mermaid .note
 {
