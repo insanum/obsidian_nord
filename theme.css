@@ -195,11 +195,11 @@ body
     --text-muted:                    var(--dark1);
 
     --h1-color:                      var(--red);
-    --h2-color:                      var(--orange);
-    --h3-color:                      var(--yellow);
-    --h4-color:                      var(--green);
-    --h5-color:                      var(--purple);
-    --h6-color:                      var(--orange);
+    --h2-color:                      var(--yellow);
+    --h3-color:                      var(--green);
+    --h4-color:                      var(--purple);
+    --h5-color:                      var(--frost0);
+    --h6-color:                      var(--frost2);
 
     --text-highlight-bg:             var(--yellow);
     --text-highlight-fg:             var(--dark0);
