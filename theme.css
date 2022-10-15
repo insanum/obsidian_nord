@@ -140,6 +140,7 @@ body
     --code-background:               var(--dark1);
 
     --mermaid-note:                  var(--frost3);
+    --mermaid-loopline:              var(--frost1);
 
     --icon-color-hover:              var(--red);
     --icon-color-focused:            var(--frost2);
@@ -237,6 +238,7 @@ body
     --code-background:               var(--light2);
 
     --mermaid-note:                  var(--frost0);
+    --mermaid-loopline:              var(--frost1);
 
     --icon-color-hover:              var(--red);
     --icon-color-focused:            var(--frost3);
@@ -300,6 +302,7 @@ td
 {
     background-color: var(--table-row-background-hover) !important;
 }
+
 .markdown-rendered mark
 {
     background-color: var(--text-highlight-bg) !important;
@@ -403,6 +406,11 @@ pre[class*="language-"]
 .calendar .week-num
 {
     color: var(--calendar-week) !important;
+}
+
+.mermaid .loopLine
+{
+    stroke: var(--mermaid-loopline) !important;
 }
 
 .calendar .today
