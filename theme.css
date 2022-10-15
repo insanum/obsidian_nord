@@ -98,11 +98,11 @@ body
     --text-muted:                    var(--light1);
 
     --h1-color:                      var(--red);
-    --h2-color:                      var(--orange);
-    --h3-color:                      var(--yellow);
-    --h4-color:                      var(--green);
-    --h5-color:                      var(--purple);
-    --h6-color:                      var(--orange);
+    --h2-color:                      var(--yellow);
+    --h3-color:                      var(--green);
+    --h4-color:                      var(--purple);
+    --h5-color:                      var(--frost0);
+    --h6-color:                      var(--frost2);
 
     --text-highlight-bg:             var(--frost1);
     --text-highlight-fg:             var(--dark0);
@@ -136,6 +136,7 @@ body
     --text-selection:                rgba(var(--red_x), 0.6);
     --flashing-background:           rgba(var(--red_x), 0.3);
 
+    --code-normal:                   var(--frost1);
     --code-background:               var(--dark1);
 
     --mermaid-note:                  var(--frost3);
@@ -232,6 +233,7 @@ body
     --text-selection:                rgba(var(--red_x), 0.6);
     --flashing-background:           rgba(var(--red_x), 0.3);
 
+    --code-normal:                   var(--frost1);
     --code-background:               var(--light2);
 
     --mermaid-note:                  var(--frost0);
@@ -273,13 +275,13 @@ thead
 th
 {
     font-weight: 600 !important;
-    border: 0px !important;
+    border: 1px solid var(--background-secondary) !important;
 }
 
 td
 {
-    border-left: 0px !important;
-    border-right: 0px !important;
+    border-left: 1px solid var(--background-secondary) !important;
+    border-right: 1px solid var(--background-secondary) !important;
     border-bottom: 1px solid var(--background-secondary) !important;
 }
 
