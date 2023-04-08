@@ -144,6 +144,7 @@ body
     --mermaid-note:                  var(--frost3);
     --mermaid-loopline:              var(--frost1);
     --mermaid-exclude:               var(--dark3);
+    --mermaid-seqnum:                var(--dark0);
 
     --icon-color-hover:              var(--red);
     --icon-color-focused:            var(--frost2);
@@ -248,6 +249,7 @@ body
     --mermaid-note:                  var(--frost0);
     --mermaid-loopline:              var(--frost1);
     --mermaid-exclude:               var(--light0);
+    --mermaid-seqnum:                var(--light0);
 
     --icon-color-hover:              var(--red);
     --icon-color-focused:            var(--frost3);
@@ -403,6 +405,11 @@ pre[class*="language-"]
     padding: 0.1em 0.25em 0.1em 0;
 }
 
+.cm-line .cm-strong
+{
+    color: var(--bold-color) !important;
+}
+
 /*
  * Keep list bullet padding the same between viewer and editor.
  * This is annoying with the cursor in the editor as there is a gap.
@@ -430,14 +437,25 @@ pre[class*="language-"]
     fill: var(--mermaid-note) !important;
 }
 
-.mermaid .loopLine
+.mermaid .loopLine,
 {
     stroke: var(--mermaid-loopline) !important;
+}
+
+.mermaid .loopText>tspan,
+.mermaid .entityLabel
+{
+    fill: var(--red) !important;
 }
 
 .mermaid .exclude-range
 {
     fill: var(--mermaid-exclude) !important;
+}
+
+.mermaid .sequenceNumber
+{
+    fill: var(--mermaid-seqnum) !important;
 }
 
 .calendar .week-num
