@@ -91,11 +91,13 @@ body
     --background-secondary-alt:      var(--dark2);
     --background-modifier-border:    var(--dark2);
 
-    --cursor-line-background:        rgba(var(--dark3_x), 0.5);
+    --cursor-line-background:        rgba(var(--red_x), 0.2);
 
     --text-normal:                   var(--light2);
     --text-faint:                    var(--light0);
     --text-muted:                    var(--light1);
+
+    --link-url:                      var(--purple);
 
     --h1-color:                      var(--red);
     --h2-color:                      var(--yellow);
@@ -141,6 +143,7 @@ body
 
     --mermaid-note:                  var(--frost3);
     --mermaid-loopline:              var(--frost1);
+    --mermaid-exclude:               var(--dark3);
 
     --icon-color-hover:              var(--red);
     --icon-color-focused:            var(--frost2);
@@ -192,11 +195,13 @@ body
     --background-secondary-alt:      var(--light1);
     --background-modifier-border:    var(--light1);
 
-    --cursor-line-background:        rgba(var(--light0_x), 0.2);
+    --cursor-line-background:        rgba(var(--red_x), 0.1);
 
     --text-normal:                   var(--dark2);
     --text-faint:                    var(--dark0);
     --text-muted:                    var(--dark1);
+
+    --link-url:                      var(--purple);
 
     --h1-color:                      var(--red);
     --h2-color:                      var(--yellow);
@@ -242,6 +247,7 @@ body
 
     --mermaid-note:                  var(--frost0);
     --mermaid-loopline:              var(--frost1);
+    --mermaid-exclude:               var(--light0);
 
     --icon-color-hover:              var(--red);
     --icon-color-focused:            var(--frost3);
@@ -311,8 +317,8 @@ td
 
 .markdown-rendered mark
 {
-    background-color: var(--text-highlight-bg) !important;
-    color: var(--text-highlight-fg) !important;
+    background-color: var(--text-highlight-bg);
+    color: var(--text-highlight-fg);
 }
 
 .markdown-rendered mark a
@@ -355,6 +361,16 @@ pre[class*="language-"]
     line-height: var(--line-height-tight) !important;
 }
 
+.cm-url
+{
+    color: var(--link-url) !important;
+}
+
+.cm-url:hover
+{
+    color: var(--text-accent-hover) !important;
+}
+
 /* Keep highlight/marks the same between viewer and editor. */
 .cm-highlight
 {
@@ -387,11 +403,16 @@ pre[class*="language-"]
     padding: 0.1em 0.25em 0.1em 0;
 }
 
-/* Keep list bullet padding the same between viewer and editor. */
+/*
+ * Keep list bullet padding the same between viewer and editor.
+ * This is annoying with the cursor in the editor as there is a gap.
+ */
+/*
 .cm-formatting-list
 {
-    padding-right: 4px !important;
+     padding-right: 4px !important;
 }
+*/
 
 /*
  * Keep sub-list indenting the same between viewer and editor.
@@ -409,14 +430,19 @@ pre[class*="language-"]
     fill: var(--mermaid-note) !important;
 }
 
-.calendar .week-num
-{
-    color: var(--calendar-week) !important;
-}
-
 .mermaid .loopLine
 {
     stroke: var(--mermaid-loopline) !important;
+}
+
+.mermaid .exclude-range
+{
+    fill: var(--mermaid-exclude) !important;
+}
+
+.calendar .week-num
+{
+    color: var(--calendar-week) !important;
 }
 
 .calendar .today
