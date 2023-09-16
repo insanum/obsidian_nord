@@ -437,7 +437,7 @@ pre[class*="language-"]
     fill: var(--mermaid-note) !important;
 }
 
-.mermaid .loopLine,
+.mermaid .loopLine
 {
     stroke: var(--mermaid-loopline) !important;
 }
