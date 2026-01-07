@@ -116,7 +116,7 @@ body
     --tag-background:                var(--dark2);
     --tag-background-hover:          var(--dark1);
 
-    --titlebar-text-color-focused:   var(--red);
+    /* --titlebar-text-color-focused:   var(--red); */
 
     --inline-title-color:            var(--yellow);
 
@@ -221,7 +221,7 @@ body
     --tag-background:                var(--light1);
     --tag-background-hover:          var(--light0);
 
-    --titlebar-text-color-focused:   var(--red);
+    /* --titlebar-text-color-focused:   var(--red); */
 
     --inline-title-color:            var(--yellow);
 
