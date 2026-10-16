@@ -107,7 +107,7 @@ body
     --h6-color:                      var(--frost2);
 
     --text-highlight-bg:             var(--frost1);
-    --text-highlight-fg:             var(--dark0);
+    --text-highlight-fg:             var(--code-normal);
 
     --text-accent:                   var(--orange);
     --text-accent-hover:             var(--frost2);
